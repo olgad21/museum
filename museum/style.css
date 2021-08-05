@@ -346,12 +346,86 @@ font-size: 18px;
 line-height: 21px;
 
 color: #000000;
+}
 
+/*Visiting section styles end */
+
+/*Explore section styles start */
+
+.explore {
+  background-color: #000000;
+  background-size: cover;
+}
+
+.explore__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 10px 68px 10px;
+}
+
+.explore__text {
+  margin-right: 60px;
+}
+
+.explore__title {
+  position: absolute;
+  width: 660px;
+  height: 90px;
+  top: 75px;
+
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.explore__line {
+  position: absolute;
+  width: 660px;
+  height: 3px;
+  top: 190px;
+
+  background: #710707;
+  border-radius: 0px;
+}
+
+.explore__desc {
+  position: absolute;
+  width: 660px;
+  height: 77px;
+  top: 268px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+
+  color: #FFFFFF;
 
 }
 
+p {
+  margin-bottom: 25px;
+}
 
+.explore__wrapper p span {
+  color:#CAAA7D;
+}
 
+.explore_img {
+  position: absolute;
+  width: 720px;
+  height: 700px;
 
+  border-radius: 0px;
+}
 
-/*Visiting section styles end */
+/*Explore section styles end */
