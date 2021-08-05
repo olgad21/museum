@@ -17,6 +17,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -77,6 +78,7 @@ body {
   letter-spacing: 2px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .header__link:hover, .header__link:focus, .header__link__active {
@@ -98,14 +100,16 @@ body {
 
 
 .welcome__image {
+  position: absolute;
   height: 100%;
   width: 1215px;
-  top: 0;
-  position: absolute;
+  height: 750px;
   bottom: 0;
   right: 0;
-  background: url(../museum/assets/img/background.jpg) no-repeat;
-  background-size: cover;
+  background: url(../museum/assets/img/background.jpg);
+  background-position-x: calc(100% - 0px);
+  background-position-y: calc(100% - 0px);
+  background-repeat: no-repeat;
 }
 
 .welcome__title {
