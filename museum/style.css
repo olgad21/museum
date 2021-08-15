@@ -433,3 +433,195 @@ p {
 }
 
 /*Explore section styles end */
+
+/*Video section styles start */
+
+.video {
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  height: 1009px;
+}
+
+.video__mp4 {
+  position: absolute;
+  width: 1440px;
+  height: 629px;
+  top: 90px;
+}
+
+.video__text {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 844px;
+}
+
+.video__title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  height: 90px;
+
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #9D8665;
+}
+
+.video__desc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  height: 90px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+
+  color: #000000;
+}
+
+/*Video section styles end*/
+/*Tickets section styles start*/
+
+
+.tickets {
+  background-color: #000000;
+  height: 893px;
+}
+
+.tickets__title {
+  position: absolute;
+  width: 500px;
+  height: 90px;
+  top: 75px;
+
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color:white;
+}
+
+.tickets__line {
+  position: absolute;
+  width: 1440px;
+  height: 3px;
+  left: 0px;
+  top: 190px;
+
+  background: #710707;
+  border-radius: 0px;
+}
+
+.tickets__wrapper {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  top: 268px;
+  height: 262px;
+}  
+
+.tickets__img {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  width: 720px;
+  height: 550px;
+}
+
+.tickets__radio {
+  margin-left: 60px;
+}
+
+.tickets__radio-title {
+
+  display: block;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  background-color: green;
+
+  width: 156px;
+  height: 33px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.tickets__radio-list {
+  display: block;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  width: 230px;
+  height: 176px;
+  background-color: pink;
+}
+
+.tickets__amount {
+  margin-left: 240px;
+}
+
+.tickets__amount-title {
+  display: block;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  width: 156px;
+  height: 33px;
+  left: 0px;
+  top: 0px;
+
+  background-color: green;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.tickets__amount-list {
+  display: block;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  width: 150px;
+  height: 90px;
+  background-color: red;
+
+}
+
+
+/*Tickets section styles end*/
