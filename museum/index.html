@@ -169,7 +169,7 @@
             
         </section>
 
-        <section class="tickets" id="tickets">
+        <section class="tickets section__wrapper" id="tickets">
             <!-- Tickets -->
             <div class="wrapper">
                 <h2 class="tickets__title">Buy tickets</h2>
@@ -178,28 +178,55 @@
                     <img class="tickets__img" src="assets/img/tickets.jpg" alt="Louvre picture">
                     <div class="tickets__radio">
                         <h3 class="tickets__radio-title">Ticket Type</h3>
-                        <p class="tickets__radio-list">
-                            <ul>
-                                <li>Permanent</li>
-                                <li>Temporary</li>
-                                <li>Combined</li>
-                            </ul>
+                        <ul class="tickets__radio-list">
+                            <li>
+                                <label class="tickets__radio-item">
+                                    <span class="tickets__radio-input">
+                                        <input type="radio" name="tickets" value="Permanent" checked>
+                                    </span>
+                                    <span class="tickets__radio-label">Permanent exhibition</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="tickets__radio-item">
+                                    <span class="tickets__radio-input">
+                                        <input type="radio" name="tickets" value="Temporary">
+                                        <span class="tickets__radio-control"></span>
+                                    </span>
+                                    <span class="tickets__radio-label">Temporary exhibition</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="tickets__radio-item">
+                                    <input type="radio" name="tickets" value="Combined">
+                                    <span class="tickets__radio-control"></span>
+                                    <span class="tickets__radio-label">Combined exhibition</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="tickets__amount">
-                        <p class="tickets__amount-list">
-
-                        </p>
                         <h3 class="tickets__amount-title">Amount</h3>
+                        <div class="tickets__amount-block">
+                            <p class="tickets__amount-block-title">Basic 18+</p>
+                            <div class="tickets__counter">
+                                <span>-</span>
+                                <span>1</span>
+                                <span>+</span>
+                            </div>
+                        </div>
+                        <div class="tickets__amount-block">
+                            <p class="tickets__amount-block-title">Senior 65+</p>
+                            <div class="tickets__counter">
+                                <span>-</span>
+                                <span>1</span>
+                                <span>+</span>
+                            </div>
+                        </div>
+                        <p class="tickets__amount-total">Total €220</p>
+                        <a href="#" class="tickets__button">Buy now</a>
                     </div>
                     
-
-                        </p>
-                            
-                            
-                        </p>
-
-
-
-                    </div>
                 </div>
             
         </section>

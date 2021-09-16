@@ -165,7 +165,7 @@ body {
   font-size: 22px;
 
   display: flex;
-  justify-content: center; /* align horizontal */
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #FFFFFF;
@@ -496,14 +496,15 @@ p {
 
 .tickets {
   background-color: #000000;
-  height: 893px;
+}
+
+.section__wrapper {
+  padding: 75px 0;
 }
 
 .tickets__title {
-  position: absolute;
   width: 500px;
   height: 90px;
-  top: 75px;
 
   font-family: Forum;
   font-style: normal;
@@ -516,33 +517,17 @@ p {
 }
 
 .tickets__line {
-  position: absolute;
-  width: 1440px;
   height: 3px;
-  left: 0px;
-  top: 190px;
+  margin: 25px 0 75px;
 
   background: #710707;
-  border-radius: 0px;
 }
 
 .tickets__wrapper {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-row-gap: 60px;
-  top: 268px;
-  height: 262px;
+  display: flex;
 }  
 
 .tickets__img {
-  display: block;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 4;
-
   width: 720px;
   height: 550px;
 }
@@ -551,58 +536,59 @@ p {
   margin-left: 60px;
 }
 
+.tickets__radio-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: black;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+
 .tickets__radio-title {
-
-  display: block;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-
-  background-color: green;
-
-  width: 156px;
-  height: 33px;
-  left: 0px;
-  top: 0px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
+  color: #FFFFFF;
+}
+
+.tickets__radio-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+
   color: #FFFFFF;
 }
 
 .tickets__radio-list {
-  display: block;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
   width: 230px;
-  height: 176px;
-  background-color: pink;
+  margin-top: 50px;
+  color: #FFFFFF;
+}
+
+.tickets__radio-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.tickets__radio-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .tickets__amount {
-  margin-left: 240px;
+  margin-left: auto;
 }
 
 .tickets__amount-title {
-  display: block;
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-
-  width: 156px;
-  height: 33px;
-  left: 0px;
-  top: 0px;
-
-  background-color: green;
-
+  text-align: right;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -610,18 +596,57 @@ p {
   color: #FFFFFF;
 }
 
-.tickets__amount-list {
-  display: block;
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
-
+.tickets__amount-block {
+  color: #FFFFFF;
+  margin-bottom: 35px;
+  margin-left: auto;
   width: 150px;
-  height: 90px;
-  background-color: red;
-
 }
 
+.tickets__amount-block-title {
+  margin-bottom: 15px;
+}
+
+.tickets__counter {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #FFFFFF;
+  padding: 0 14px;
+}
+
+.tickets__amount-total {
+margin: 50px 0;
+text-align: right;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+
+letter-spacing: 1.65px;
+
+color: #FFFFFF;
+}
+
+.tickets__button {
+  width: 175px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #000000;
+
+  background: #FFFFFF;
+  border-radius: 2px;
+}
 
 /*Tickets section styles end*/
