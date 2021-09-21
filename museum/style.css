@@ -33,10 +33,13 @@ body {
    color: black;
 }
 
+section {
+  padding: 75px 0px;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  position: relative;
 }
 
 /*Header styles start */
@@ -53,8 +56,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 74px;
-  padding-bottom: 76px;
+  padding: 62px 0;
 }
 
 .header__list {
@@ -91,55 +93,54 @@ body {
 /*Welcome section styles start */
 
 .welcome {
-  height: 750px;
-  background: url(../museum/assets/img/BG.jpg) no-repeat center;
+  background: black;
   background-size: cover;
-  position: relative;
 }
 
-
+.welcome__wrapper {
+  margin: 0;
+  display: flex;
+  height: 750px;
+}
 
 .welcome__image {
-  position: absolute;
-  height: 100%;
-  width: 1215px;
+  display: block;
   height: 750px;
+  width: 1000px;
   bottom: 0;
   right: 0;
-  background: url(../museum/assets/img/background.jpg);
-  background-position-x: calc(100% - 0px);
-  background-position-y: calc(100% - 0px);
-  background-repeat: no-repeat;
+  background: url(../museum/assets/img/background-2.jpg);
+  /* background-position-x: calc(100% - 0px);
+  background-position-y: calc(100% - 0px); */
+  /* background-repeat: no-repeat; */
+  z-index: 1;
+}
+
+.welcome__text {
+  display: block;
+  margin-top: 150px;
+  z-index: 2;
 }
 
 .welcome__title {
-  position: absolute;
   width: 598px;
-  height: 90px;
   left: 0px;
-  top: 114px;
-
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
   line-height: 90px;
-
-
   letter-spacing: 5px;
   text-transform: uppercase;
-
   color: #FFFFFF;
-
 }
 
-.welcome__text {
-  position: absolute;
+.welcome__desc {
   width: 445px;
   height: 33px;
   left: 0px;
-  top: 320px;
-
+  margin-top: 25px;
+ 
   font-family: Roboto;
   font-style: normal;
   font-weight: 200;
@@ -149,15 +150,13 @@ body {
   color: #FFFFFF;
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 76px;
 }
 
 .welcome__button {
-  position: absolute;
   width: 360px;
   height: 75px;
   left: 0px;
-  top: 429px;
+  margin-top: 75px;
 
   font-family: Roboto;
   font-style: normal;
@@ -181,43 +180,33 @@ body {
 
 /*Visiting section styles start */
 
-.visiting {
-height: 1265px;
-}
 
 .visiting__title {
-position: absolute;
 width: 700px;
 height: 90px;
 left: 0px;
 top: 75px;
-
 font-family: Forum;
 font-style: normal;
 font-weight: normal;
 font-size: 80px;
 line-height: 90px;
-
 letter-spacing: 5px;
 text-transform: uppercase;
-
 color: #9D8665;
 }
 
 .visiting__line {
-position: absolute;
 width: 1440px;
 height: 3px;
 left: 0px;
-top: 190px;
-
+margin-top: 25px;
 background: #710707;
 border-radius: 0px;
 }
 
 .visiting__cards {
-position:absolute;
-top: 268px;
+margin-top: 75px;
 height: 922px;
 width: 1440px;
 display: grid;
@@ -359,10 +348,10 @@ color: #000000;
 .explore {
   background-color: #000000;
   background-size: cover;
+  padding: 75px 0px;
 }
 
 .explore__wrapper {
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 75px 10px 68px 10px;
@@ -373,11 +362,8 @@ color: #000000;
 }
 
 .explore__title {
-  position: absolute;
   width: 660px;
   height: 90px;
-  top: 75px;
-
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
@@ -391,27 +377,22 @@ color: #000000;
 }
 
 .explore__line {
-  position: absolute;
   width: 660px;
   height: 3px;
-  top: 190px;
-
+  margin-top: 25px;
   background: #710707;
   border-radius: 0px;
 }
 
 .explore__desc {
-  position: absolute;
   width: 660px;
   height: 77px;
-  top: 268px;
-
+  margin-top: 75px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 38px;
-
   color: #FFFFFF;
 
 }
@@ -425,10 +406,8 @@ p {
 }
 
 .explore_img {
-  position: absolute;
   width: 720px;
   height: 700px;
-
   border-radius: 0px;
 }
 
@@ -436,34 +415,24 @@ p {
 
 /*Video section styles start */
 
-.video {
-  position: relative;
-  background-color: white;
-  background-size: cover;
-  height: 1009px;
-}
-
 .video__mp4 {
-  position: absolute;
-  width: 1440px;
-  height: 629px;
-  top: 90px;
-}
-
-.video__text {
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  top: 844px;
+  margin-top: 40px;
+}
+
+.video__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
 }
 
 .video__title {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   width: 720px;
   height: 90px;
-
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
@@ -471,22 +440,18 @@ p {
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
-
   color: #9D8665;
 }
 
 .video__desc {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   width: 720px;
   height: 90px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 38px;
-
   color: #000000;
 }
 
@@ -498,9 +463,9 @@ p {
   background-color: #000000;
 }
 
-.section__wrapper {
+/* .section__wrapper {
   padding: 75px 0;
-}
+} */
 
 .tickets__title {
   width: 500px;
@@ -650,3 +615,14 @@ color: #FFFFFF;
 }
 
 /*Tickets section styles end*/
+
+.img__parallax {
+  height: 400px;
+  width: 100%;
+  background: url(../museum/assets/img/parallax.jpg);
+  /* background-position-x: calc(100% - 0px);
+  background-position-y: calc(100% - 0px); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+}
