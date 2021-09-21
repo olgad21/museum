@@ -181,7 +181,7 @@ section {
 /*Visiting section styles start */
 
 
-.visiting__title {
+.gold-title {
 width: 700px;
 height: 90px;
 left: 0px;
@@ -625,4 +625,47 @@ color: #FFFFFF;
   /* background-repeat: no-repeat; */
   background-size: cover;
   background-attachment: fixed;
+}
+
+/* Contacts section style start */
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.contacts__desc {
+  display: block;
+  width: 282px;
+}
+
+.contacts__img {
+  display: block;
+  width: 960px;
+  height: 620px;
+}
+
+/* Contacts section style end */
+/* Footer section style start */
+
+.footer {
+  background-color: #000000;
+  padding: 85px 0px 50px 0px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logos {
+  display: flex;
+  padding-top: 100px;
+  right: 0;
+  margin-left: 300px;
+}
+
+.footer_logo-item {
+  margin-left: 50px;
 }
