@@ -74,7 +74,7 @@ section {
 
 .header__link {
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 22px;
   line-height: 50px;
   letter-spacing: 2px;
@@ -122,7 +122,7 @@ section {
   z-index: 2;
 }
 
-.welcome__title {
+.white-title {
   width: 598px;
   left: 0px;
   font-family: Forum;
@@ -136,7 +136,6 @@ section {
 }
 
 .welcome__desc {
-  width: 445px;
   height: 33px;
   left: 0px;
   margin-top: 25px;
@@ -345,7 +344,7 @@ color: #000000;
 
 /*Explore section styles start */
 
-.explore {
+.black-section {
   background-color: #000000;
   background-size: cover;
   padding: 75px 0px;
@@ -456,11 +455,53 @@ p {
 }
 
 /*Video section styles end*/
+/*Gallery section styles start*/
+
+.gallery {
+  background-color: #000000;
+  background-size: cover;
+  padding: 75px 0px 0px 0px;
+}
+
+.picture-container {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 1900px;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.picture-inner-container {
+  flex-flow:  column wrap;
+  display: flex;
+  row-gap: 24px;
+  column-gap: 36px;
+  height: 2996px;
+  z-index: 3;
+}
+
+.picture-inner-container img:first-child, 
+.picture-inner-container img:nth-child(11) {
+  margin-top: 50px;
+}
+
+.container-gradient {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  z-index: 4;
+}
+
+/*Gallery section styles end*/
 /*Tickets section styles start*/
 
 
 .tickets {
-  background-color: #000000;
+  background-color: white;
 }
 
 /* .section__wrapper {
@@ -501,23 +542,31 @@ p {
   margin-left: 60px;
 }
 
-.tickets__radio-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 17px;
-  width: 17px;
-  background-color: black;
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-}
-
 .tickets__radio-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  color: #FFFFFF;
+  color: black;
+}
+
+.tickets__radio-item {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.tickets__radio-control {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-right: 23px;
 }
 
 .tickets__radio-label {
@@ -527,19 +576,13 @@ p {
   font-size: 22px;
   line-height: 26px;
 
-  color: #FFFFFF;
+  color: black;
 }
 
 .tickets__radio-list {
-  width: 230px;
+  width: 270px;
   margin-top: 50px;
-  color: #FFFFFF;
-}
-
-.tickets__radio-item {
-  position: relative;
-  display: flex;
-  margin-bottom: 50px;
+  color: black;
 }
 
 .tickets__radio-item input {
@@ -558,11 +601,12 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  color: #FFFFFF;
+  color: black;
+  padding-bottom: 25px;
 }
 
 .tickets__amount-block {
-  color: #FFFFFF;
+  color: black;
   margin-bottom: 35px;
   margin-left: auto;
   width: 150px;
@@ -575,7 +619,7 @@ p {
 .tickets__counter {
   display: flex;
   justify-content: space-between;
-  border: 3px solid #FFFFFF;
+  border: 3px solid black;
   padding: 0 14px;
 }
 
@@ -591,7 +635,7 @@ line-height: 33px;
 
 letter-spacing: 1.65px;
 
-color: #FFFFFF;
+color: black;
 }
 
 .tickets__button {
@@ -608,9 +652,9 @@ color: #FFFFFF;
   line-height: 26px;
   text-decoration: none;
   letter-spacing: 2px;
-  color: #000000;
+  color: white;
 
-  background: #FFFFFF;
+  background: black;
   border-radius: 2px;
 }
 
@@ -640,10 +684,19 @@ color: #FFFFFF;
   width: 282px;
 }
 
-.contacts__img {
+.contacts__desc-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+}
+
+.contacts__image {
   display: block;
   width: 960px;
   height: 620px;
+  background: url(../museum/assets/img/Rectangle\ \(2\).png);
 }
 
 /* Contacts section style end */
@@ -651,10 +704,10 @@ color: #FFFFFF;
 
 .footer {
   background-color: #000000;
-  padding: 85px 0px 50px 0px;
+  padding: 85px 0 25px 0;
 }
 
-.footer__wrapper {
+.footer__wrapper-top {
   display: flex;
   justify-content: space-between;
 }
@@ -668,4 +721,16 @@ color: #FFFFFF;
 
 .footer_logo-item {
   margin-left: 50px;
+}
+
+.footer__line {
+  background-color: #666666;
+  height: 3px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.footer__wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
 }

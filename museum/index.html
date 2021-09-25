@@ -51,18 +51,13 @@
             <div class="wrapper">
                 <div class="welcome__wrapper">
                     <div class="welcome__text">
-                        <h1 class="welcome__title">Welcome<br> to the Louvre</h1>
+                        <h1 class="white-title">Welcome<br> to the Louvre</h1>
                         <p class="welcome__desc">From the castle to the museum</p>
                         <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" class="welcome__button" target="_blank">Discover the Louvre</a>
                     </div>
                     <div class="welcome__image"></div>
                 </div>
             </div>  
-          <!--  -->
-            
-                
-            
-
         </section>
     <!-- Visiting -->
         <section id="visiting"> 
@@ -139,11 +134,10 @@
             
                 
             </div>
-                
-            
+    
         </section> -->
 
-        <section class="explore" id="explore"> 
+        <section class="black-section" id="explore"> 
             <!-- Explore -->
                 <div class="wrapper explore__wrapper">
                     <div class="explore__text">
@@ -178,12 +172,36 @@
         </section>
 
         <!-- Gallery -->
-        <section id="gallery"></section>
+        <section class="gallery" id="gallery">
+            <div class="wrapper">
+                <h2 class="white-title">Art Gallery</h2> 
+                <div class="picture-container">
+                    <div class="picture-inner-container">
+                        <img src="../museum/assets/img/galery/galery1.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery2.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery3.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery4.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery5.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery6.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery7.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery8.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery9.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery10.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery11.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery12.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery13.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery14.jpg" alt="Gallery">
+                        <img src="../museum/assets/img/galery/galery15.jpg" alt="Gallery">
+                    </div>
+                    <div class="container-gradient"></div>
+                </div>
+            </div>
+        </section>
 
         <section class="tickets" id="tickets">
             <!-- Tickets -->
             <div class="wrapper">
-                <h2 class="tickets__title">Buy tickets</h2>
+                <h2 class="gold-title">Buy tickets</h2>
                 <div class="tickets__line"></div>
                 <div class="tickets__wrapper"> 
                     <img class="tickets__img" src="assets/img/tickets.jpg" alt="Louvre picture">
@@ -192,18 +210,15 @@
                         <ul class="tickets__radio-list">
                             <li>
                                 <label class="tickets__radio-item">
-                                    <span class="tickets__radio-input">
-                                        <input type="radio" name="tickets" value="Permanent" checked>
-                                    </span>
+                                    <input type="radio" name="tickets" value="Permanent" checked>
+                                    <span class="tickets__radio-control"></span>
                                     <span class="tickets__radio-label">Permanent exhibition</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="tickets__radio-item">
-                                    <span class="tickets__radio-input">
-                                        <input type="radio" name="tickets" value="Temporary">
-                                        <span class="tickets__radio-control"></span>
-                                    </span>
+                                    <input type="radio" name="tickets" value="Temporary">
+                                    <span class="tickets__radio-control"></span>
                                     <span class="tickets__radio-label">Temporary exhibition</span>
                                 </label>
                             </li>
@@ -247,25 +262,22 @@
             <div class="wrapper">
                 <h2 class="gold-title">Contacts</h2> 
                 <div class="tickets__line"></div>
-                <div class="contacts_wrapper">
+                <div class="contacts__wrapper">
                     <div class="contacts__desc">
-                        <p><strong>Palais Royal<br>Musee du Louvre</strong></p><br>
+                        <p class="contacts__desc-title">Palais Royal<br>Musee du Louvre</strong></p><br>
                         <p>address: 75001 Paris, France</p>
                         <p>phone: +33(0) 1 40 20 50 50</p>
                         <p>mail:info@louvre.fr</p>
                     </div>
-                    <div class="contacts__img">
-                        <img src="../museum/assets/img/Rectangle (2).png" alt="Map">
-                    </div>
+                    <div class="contacts__image"></div>
                 </div>      
             </div>   
         </section>
 
     </main>
-
     <footer class="footer">
             <div class="wrapper">
-                <div class="footer__wrapper">
+                <div class="footer__wrapper-top">
                     <div class="footer__logo">
                         <img src="assets/svg/Logo.svg" alt="Logo">
                     </div> 
@@ -296,26 +308,32 @@
                         </ul>
                    </nav>
                    <div class="footer__logos">
-                    <div class="footer_logo-item">
+                    <a href="https://www.youtube.com/user/louvre" target="_blank" class="footer_logo-item">
                         <img src="assets/svg/yt.svg" alt="logo">
-                    </div>
-                    <div class="footer_logo-item">
+                    </a>
+                    <a href="https://www.instagram.com/museelouvre/" target="_blank" class="footer_logo-item">
                         <img src="assets/svg/inst.svg" alt="logo">
-                    </div>
-                    <div class="footer_logo-item">
+                    </a>
+                    <a href="https://www.facebook.com/museedulouvre" target="_blank" class="footer_logo-item">
                         <img src="assets/svg/fb.svg" alt="logo">
-                    </div>
-                    <div class="footer_logo-item">
+                    </a>
+                    <a href="http://twitter.com/museelouvre" target="_blank" class="footer_logo-item">
                         <img src="assets/svg/twitter.svg" alt="logo">
-                    </div>
-                    <div class="footer_logo-item">
+                    </a>
+                    <a href="https://www.pinterest.fr/museedulouvre/" target="_blank" class="footer_logo-item">
                         <img src="assets/svg/pin.svg" alt="logo">
-                    </div>
+                    </a>
                    </div>
                 </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="wrapper">
+                <div class="footer__wrapper-bottom">
+                    <p class="header__link">© 2021</p>
+                    <a href="https://rs.school/js/" target="_blank" class="header__link">The Rolling Scopes School</a>
+                    <a href="https://github.com/olgad21" target="_blank" class="header__link">olgad21</p>
+                </div>
             </div>    
-
     </footer>
-    
 </body>
 </html>
