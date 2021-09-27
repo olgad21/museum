@@ -162,12 +162,20 @@
                     <h2 class="video__title">Video Journey</h2>
                     <p class="video__desc">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                   </div>
-                  <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
+                  <video class="video__main" src="../museum/assets/video/video0.mp4" poster="assets/video/poster.jpg" controls></video>
                   <!-- <iframe width="1440px" height="650px" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe> -->
                 <div class="video__mp4">
                     <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
                     <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
                     <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+                </div>
+                <div class="video__slider">
+                    <div class="video__circle"></div>
+                    <div class="video__circle"></div>
+                    <div class="video__circle"></div>
+                    <div class="video__circle"></div>
+                    <div class="video__circle"></div>
+                    <div class="video__circle"></div>
                 </div>
             </div>
         </section>
@@ -213,6 +221,7 @@
                                 <label class="tickets__radio-item">
                                     <input type="radio" name="tickets" value="Permanent" checked>
                                     <span class="tickets__radio-control"></span>
+                                    <span class="tickets__radio-control-dot"></span>
                                     <span class="tickets__radio-label">Permanent exhibition</span>
                                 </label>
                             </li>
@@ -220,6 +229,7 @@
                                 <label class="tickets__radio-item">
                                     <input type="radio" name="tickets" value="Temporary">
                                     <span class="tickets__radio-control"></span>
+                                    <span class="tickets__radio-control-dot"></span>
                                     <span class="tickets__radio-label">Temporary exhibition</span>
                                 </label>
                             </li>
@@ -227,6 +237,7 @@
                                 <label class="tickets__radio-item">
                                     <input type="radio" name="tickets" value="Combined">
                                     <span class="tickets__radio-control"></span>
+                                    <span class="tickets__radio-control-dot"></span>
                                     <span class="tickets__radio-label">Combined exhibition</span>
                                 </label>
                             </li>
@@ -237,17 +248,17 @@
                         <div class="tickets__amount-block">
                             <p class="tickets__amount-block-title">Basic 18+</p>
                             <div class="tickets__counter">
-                                <span>-</span>
-                                <span>1</span>
-                                <span>+</span>
+                                <button onclick="minusBasic()" class="tickets__add">-</button>
+                                <span class="basic__amount">1</span>
+                                <button onclick="plusBasic()" class="tickets__add">+</button>
                             </div>
                         </div>
                         <div class="tickets__amount-block">
                             <p class="tickets__amount-block-title">Senior 65+</p>
                             <div class="tickets__counter">
-                                <span>-</span>
-                                <span>1</span>
-                                <span>+</span>
+                                <button onclick="minusSenior()" class="tickets__add">-</button>
+                                <span class="senior__amount">1</span>
+                                <button onclick="plusSenior()" class="tickets__add">+</button>
                             </div>
                         </div>
                         <p class="tickets__amount-total">Total €220</p>
@@ -287,11 +298,6 @@
                         <div class="popup__line"></div>
                         <div class="popup__form">
                             <form>
-                                <!-- First name:<br>
-                                <input type="text" name="firstname">
-                                <br>
-                                Last name:<br>
-                                <input type="text" name="lastname"> -->
                                 <div class="form_datetime">
                                     <input type="date" name="date">
                                     <input type="time"><br>
@@ -352,8 +358,11 @@
                                 <span class="popup__overview-total">Total:</span>
                                 <span class="popup__overview-total">60 €</span>
                             </div>
-
-
+                            <div class="popup__overview-cards">
+                                <img class="popup__overview-card-1" src="assets/img/Group 71.png">
+                                <img class="popup__overview-card-2" src="assets/img/Group 72.png">
+                            </div>
+                            <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home" class="popup__button" target="_blank">Book</a>      
                     </div>
                 </div>
             </div>
@@ -420,5 +429,7 @@
                 </div>
             </div>    
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

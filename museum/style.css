@@ -421,7 +421,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
+  margin: 40px 0;
+}
+
+.video__main {
+  width: 1440px;
 }
 
 .video__text {
@@ -455,6 +459,21 @@ p {
   font-size: 22px;
   line-height: 38px;
   color: #000000;
+  margin-bottom: 0;
+}
+
+.video__slider {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin-left: 650px;
+}
+
+.video__circle {
+  width: 12px;
+  height: 12px;
+  background-color: grey;
+  border-radius: 50%;
 }
 
 /*Video section styles end*/
@@ -554,19 +573,15 @@ p {
 }
 
 .tickets__radio-item {
-  /* position: relative; */
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 25px;
 }
 
 .tickets__radio-control {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: white;
+  height: 17px;
+  width: 17px;
   border: 3px solid black;
   border-radius: 50%;
   margin-right: 23px;
@@ -592,6 +607,16 @@ p {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+}
+
+.tickets__radio-item input:checked ~ .tickets__radio-control-dot {
+  position: absolute;
+  left: 4.5px;
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 28px;
 }
 
 .tickets__amount {
@@ -659,6 +684,11 @@ color: black;
 
   background: black;
   border-radius: 2px;
+}
+
+.tickets__add {
+  border: transparent;
+  background: none;
 }
 
 /*Tickets section styles end*/
@@ -764,7 +794,7 @@ line-height: 33px;
 
 .popup:target {
   opacity: 1;
-  visibility: visible;;
+  visibility: visible;
 }
 
 .popup:target .popup__content {
@@ -950,4 +980,44 @@ line-height: 33px;
   font-size: 32px;
   line-height: 37px;
   color: #030303;
+}
+
+.popup__overview-cards {
+  position: relative;
+  margin-top: 10px;
+  height: 241px;
+}
+
+.popup__overview-card-1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 110px;
+  bottom: 30px;
+  z-index: 8;
+}
+
+.popup__overview-card-2 {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  bottom: 0;
+  right: 0;
+  z-index: 7;
+}
+
+.popup__button {
+  width: 220px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.9;
+  background: #710707;
+  margin-top: 25px;
+  text-decoration: none;
+  margin-bottom: 25px;
 }
