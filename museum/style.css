@@ -56,7 +56,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 62px 0;
+  padding: 60px 0;
 }
 
 .header__list {
@@ -65,7 +65,7 @@ section {
 }
 
 .header__item {
-  margin-right: 76px;
+  margin-right: 55px;
 }
 
 .header__item:last-child {
@@ -95,6 +95,7 @@ section {
 .welcome {
   background: black;
   background-size: cover;
+  padding: 0;
 }
 
 .welcome__wrapper {
@@ -107,8 +108,7 @@ section {
   display: block;
   height: 750px;
   width: 1000px;
-  bottom: 0;
-  right: 0;
+  margin-top: 0;
   background: url(../museum/assets/img/background-2.jpg);
   /* background-position-x: calc(100% - 0px);
   background-position-y: calc(100% - 0px); */
@@ -205,13 +205,18 @@ border-radius: 0px;
 }
 
 .visiting__cards {
-margin-top: 75px;
 height: 922px;
 width: 1440px;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-column-gap: 60px;
+grid-row-gap: 75px;
 grid-auto-rows: minmax(422px, auto);
+margin-bottom: 75px;
+}
+
+.visiting__card {
+  margin-top: 75px;
 }
 
 .visiting__card-1 {
@@ -350,13 +355,12 @@ color: #000000;
 .black-section {
   background-color: #000000;
   background-size: cover;
-  padding: 75px 0px;
 }
 
 .explore__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 75px 10px 68px 10px;
+  padding: 0px 10px 0 20px;
 }
 
 .explore__text {
@@ -401,6 +405,11 @@ color: #000000;
 
 p {
   margin-bottom: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .explore__wrapper p span {
@@ -489,7 +498,7 @@ p {
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
-  height: 1900px;
+  height: 1965px;
   width: 100%;
   margin-top: 75px;
 }
@@ -524,6 +533,7 @@ p {
 
 .tickets {
   background-color: white;
+  margin-top: 25px;
 }
 
 /* .section__wrapper {
@@ -635,7 +645,7 @@ p {
 
 .tickets__amount-block {
   color: black;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   margin-left: auto;
   width: 150px;
 }
@@ -649,6 +659,8 @@ p {
   justify-content: space-between;
   border: 3px solid black;
   padding: 0 14px;
+  height: 50px;
+  align-items: center;
 }
 
 .tickets__amount-total {
@@ -714,7 +726,7 @@ color: black;
 
 .contacts__desc {
   display: block;
-  width: 282px;
+  width: 285px;
 }
 
 .contacts__desc-title {
@@ -737,22 +749,26 @@ line-height: 33px;
 
 .footer {
   background-color: #000000;
-  padding: 85px 0 25px 0;
+  padding: 75px 0 50px 0;
 }
 
 .footer__wrapper-top {
   display: flex;
-  justify-content: space-between;
+}
+
+.footer__nav {
+  width: 105px;
+  margin-left: 145px;
 }
 
 .footer__logos {
   display: flex;
-  padding-top: 100px;
-  right: 0;
+  margin-top: 80px;
+  margin-left: 405px;
 }
 
 .footer_logo-item {
-  margin-left: 50px;
+  margin-right: 25px;
   width: 50px;
   height: 50px;
   border: 1px solid #666666;
@@ -761,15 +777,20 @@ line-height: 33px;
   transition: color 0.3s;
 }
 
+.footer_logo-item:last-child {
+  margin-right: 0;
+}
+
 .footer_logo-item:hover {
   border-color: #9D8665;
 }
+
 
 .footer__line {
   background-color: #666666;
   height: 3px;
   width: 100%;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .footer__wrapper-bottom {
