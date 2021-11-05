@@ -58,7 +58,29 @@
                         <p class="welcome__desc">From the castle to the museum</p>
                         <a href="tours/tour7.html" class="welcome__button" target="_blank">Discover the Louvre</a>
                     </div>
-                    <div class="welcome__image"></div>
+                    <!-- <div class="welcome__image"></div> -->
+                    <div class="welcome__carousel">
+                        <div class="welcome__carousel-items">
+                            <img class="welcome__carousel-image active" src="assets/img/welcome-slider/1.jpg" alt="Painting">
+                            <img class="welcome__carousel-image" src="assets/img/welcome-slider/2.jpg" alt="Painting">
+                            <img class="welcome__carousel-image" src="assets/img/welcome-slider/3.jpg" alt="Painting">
+                            <img class="welcome__carousel-image" src="assets/img/welcome-slider/4.jpg" alt="Painting">
+                            <img class="welcome__carousel-image" src="assets/img/welcome-slider/5.jpg" alt="Painting">
+                        </div>
+                        <div class="welcome__carousel-container">
+                            <span class="welcome__counter">01</span>
+                            <span class="welcome__slide">|</span>
+                            <span class="welcome__slide">05</span>
+                            <div class="welcome__control" onclick="currentImageSlide(1)"></div>
+                            <div class="welcome__control" onclick="currentImageSlide(2)"></div>
+                            <div class="welcome__control" onclick="currentImageSlide(3)"></div>
+                            <div class="welcome__control" onclick="currentImageSlide(4)"></div>
+                            <div class="welcome__control" onclick="currentImageSlide(5)"></div>
+                            <div class="welcome__carousel-arrow left" onclick="plusImageSlides(-1)">←</div>
+                            <div class="welcome__carousel-arrow right" onclick="plusImageSlides(1)">←</div>
+                        </div>
+                    </div>
+                    <div class="welcome__carousel-gradient"></div>
                 </div>
             </div>  
         </section>
@@ -165,7 +187,7 @@
                     <h2 class="video__title">Video Journey</h2>
                     <p class="video__desc">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                   </div>
-                  <video class="video__main" src="../museum/assets/video/video0.mp4" poster="assets/video/poster.jpg" controls></video>
+                  <video class="video__carousel-main" src="../museum/assets/video/video0.mp4" poster="assets/video/poster.jpg" controls></video>
                   <!-- <iframe width="1440px" height="650px" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe> -->
                 <div class="video__mp4">
                     <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
@@ -173,12 +195,13 @@
                     <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
                 </div>
                 <div class="video__slider">
-                    <div class="video__circle"></div>
-                    <div class="video__circle"></div>
-                    <div class="video__circle"></div>
-                    <div class="video__circle"></div>
-                    <div class="video__circle"></div>
-                    <div class="video__circle"></div>
+                    <span class="video__slider-arrow" onclick="plusVideoSlides(-1)">&laquo;</span>
+                    <div class="video__circle" onclick="currentVideoSlide(1)"></div>
+                    <div class="video__circle" onclick="currentVideoSlide(2)"></div>
+                    <div class="video__circle" onclick="currentVideoSlide(3)"></div>
+                    <div class="video__circle" onclick="currentVideoSlide(4)"></div>
+                    <div class="video__circle" onclick="currentVideoSlide(5)"></div>
+                    <span class="video__slider-arrow" onclick="plusVideoSlides(1)">&raquo;</span>
                 </div>
             </div>
         </section>
