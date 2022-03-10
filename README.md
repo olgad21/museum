@@ -1,2 +1,1 @@
-# olgad21-JSFE2021Q3
-Private repository for @olgad21
+https://rolling-scopes-school.github.io/olgad21-JSFE2021Q3/museum/
